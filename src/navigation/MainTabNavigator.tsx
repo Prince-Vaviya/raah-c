@@ -4,12 +4,10 @@ import DashboardScreen from '../screens/DashboardScreen';
 import AlertsScreen from '../screens/AlertsScreen';
 import JourneyScreen from '../screens/JourneyScreen';
 import CommandsScreen from '../screens/CommandsScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 import { LayoutDashboard, Map, Bell, User, Command } from 'lucide-react-native';
 
 const Tab = createBottomTabNavigator();
-
-// Placeholder screens for other tabs
-const ProfileScreen = () => null;
 
 export default function MainTabNavigator() {
   const [alertsCount, setAlertsCount] = useState<number | undefined>(3);

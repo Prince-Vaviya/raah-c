@@ -16,8 +16,8 @@ export default function LoginScreen({ navigation }: LoginScreenProps) {
   const [rememberMe, setRememberMe] = useState(true);
 
   const handleLogin = () => {
-    // any input is accepted as per request
-    navigation.navigate('Otp', { phone: employeeId || '0000000000' });
+    // Skip verification screen as requested
+    navigation.navigate('LocationPermission');
   };
 
   return (
